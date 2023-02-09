@@ -7,7 +7,7 @@ const inventoryModules = mongoose.Schema({
     brand: { type: String, required: true },
     category: { type: String, required: true },
     description: { type: String, required: true },
-    image: { type: Buffer },
+    image: { type: String },
     rating: { rate: { type: Number }, stock: { type: Number, required: true } },
     isDeleted: { type: Boolean, default: false }
 }, { timestamps: true });
